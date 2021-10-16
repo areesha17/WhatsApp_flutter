@@ -1,0 +1,94 @@
+class chatmodel {
+  final String name;
+  final String message;
+  final String time;
+  final String avatar;
+  chatmodel(
+      {required this.name,
+      required this.message,
+      required this.time,
+      required this.avatar});
+}
+
+List<chatmodel> chatData = [
+  chatmodel(
+      name: "Ayesha",
+      message: "save my number",
+      time: "9:34 PM",
+      avatar:""),
+  chatmodel(
+      name: "Hamza", 
+      message: "hamza here!", 
+      time: "10:45 PM", 
+      avatar: ""),
+  chatmodel(
+      name: "Sana", 
+      message: "Assalam o alaikum", 
+      time: "8:00 AM", 
+      avatar: ""),
+  chatmodel(
+      name: "Sheeza", 
+      message: "Ok", 
+      time: "6:30 PM", 
+      avatar: ""),
+  chatmodel(
+      name: "friends",
+      message: "Hello Everyone...",
+      time: "2:00 AM",
+      avatar: ""),
+  chatmodel(
+      name: "Urooj", 
+      message: "kesi ho", 
+      time: "4:45 PM", 
+      avatar: ""),
+  chatmodel(
+      name: "Safia", 
+      message: "Comming soon...", 
+      time: "7:39 PM", 
+      avatar: ""),
+  chatmodel(
+      name: "Sir Khawar",
+      message: "Webinar timing: 4:00",
+      time: "3:00 PM",
+      avatar: ""),
+  chatmodel(
+      name: "Nadia", 
+      message: "Ok", 
+      time: "1240: PM", 
+      avatar: ""),
+  chatmodel(
+      name: "Unknown", 
+      message: "Hi", 
+      time: "9:15 AM", 
+      avatar: ""),
+  chatmodel(
+      name: "Iqra",
+      message: "Lab 9 submit on Tomorrow....",
+      time: "7:59 AM",
+      avatar: ""),
+  chatmodel(
+      name: "Mehreen", 
+      message: "kesi ho????", 
+      time: "6: 55 PM", 
+      avatar: ""),
+  chatmodel(
+      name: "Rida", 
+      message: "Done", 
+      time: "4:50 PM", 
+      avatar: ""),
+  chatmodel(
+      name: "Uncle", 
+      message: "Ok", 
+      time: "9:30 PM", 
+      avatar: ""),
+  chatmodel(
+      name: "Miss Anum",
+      message: "Todays class is cancel",
+      time: "11:00 PM",
+      avatar: ""),
+  chatmodel(
+      name: "Maheen", 
+      message: "ALL THE BEST!!!", 
+      time: "10:30 AM", 
+      avatar: ""),
+];

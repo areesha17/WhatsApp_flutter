@@ -1,0 +1,43 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:myapp/classmodel.dart';
+
+class chat extends StatefulWidget {
+  const chat({Key? key}) : super(key: key);
+
+  @override
+  _chatState createState() => _chatState();
+}
+
+class _chatState extends State<chat> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ListView.builder(
+        itemCount: chatData.length,
+        itemBuilder: (context, i) => Column(
+          children: [
+            Divider(
+              height: 10.0,
+            ),
+            ListTile(
+              leading: CircleAvatar(),
+              title: Text(chatData[i].name,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  )),
+              subtitle: Text(
+                chatData[i].message,
+                style: TextStyle(color: Colors.grey, fontSize: 15.0),
+              ),
+              trailing: Text(
+                chatData[i].time,
+                style: TextStyle(color: Colors.grey, fontSize: 13.0),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
